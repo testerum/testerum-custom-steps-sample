@@ -1,0 +1,6 @@
+{
+  "defaultVariables" : {
+    "FLIGHT_SEARCH_URL" : "http://localhost:7777"
+  },
+  "environments" : { }
+}

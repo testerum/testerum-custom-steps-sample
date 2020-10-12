@@ -1,0 +1,35 @@
+test-def: Flight search
+
+    step: Given the HTTP mock server <<{{httpMockServer}}>> with the mock request <<{{httpMock}}>>
+        var httpMockServer = <<
+            port: "7777"
+            
+        >>
+        var httpMock = <<
+            expectedRequest:
+              method: POST
+              url: /flights/offers
+            mockResponse:
+              statusCode: 200
+              body:
+                bodyType: OTHER
+                content: "[\r\n  {\r\n    \"flightNumber\": \"KL231\",\r\n    \"departure\": \"\
+                  Amsterdam\",\r\n    \"destination\": \"New York\",\r\n    \"departureTime\"\
+                  : \"2020-10-31T15:00:00.000Z\",\r\n    \"price\": \"453$\"\r\n  },\r\n  {\r\n\
+                  \    \"flightNumber\": \"AF652\",\r\n    \"departure\": \"Amsterdam\",\r\n \
+                  \   \"destination\": \"New York\",\r\n    \"departureTime\": \"2020-10-31T20:00:00.000Z\"\
+                  ,\r\n    \"price\": \"541$\"\r\n  }\r\n]"
+            
+        >>
+    step: When I search for the flight <<{{flightDetails}}>>
+        var flightDetails = <<
+            departure: null
+            destination: New York
+            bookingDate: 2020-10-31T00:00:00.000Z
+            context:
+              accessToken: PLp4CVOWoYbRGr9zvgpGVjI7hHQYWVGWGc
+              baseUrl: "{{FLIGHT_SEARCH_URL}}"
+            
+        >>
+    step: Then <<{{BEST_FLIGHT_OFFER.flightNumber}}>> is equal to <<KL231>>
+    step: Then <<{{BEST_FLIGHT_OFFER.price}}>> is equal to <<453$>>
