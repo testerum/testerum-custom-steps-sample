@@ -1,0 +1,4 @@
+test-def: Simple Test
+
+    step: Given I am logged in with with the role <<ADMINISTRATOR>>
+    step: Then <<{{ROLE}}>> is equal to <<ADMINISTRATOR>>
