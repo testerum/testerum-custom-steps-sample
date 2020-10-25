@@ -1,11 +1,11 @@
 test-def: Flight search
 
-    step: Given the HTTP mock server <<{{httpMockServer}}>> with the mock request <<{{httpMock}}>>
-        var httpMockServer = <<
+    step: Given the HTTP mock server <<{{Mock_Server}}>> with the mock request <<{{Flight_Offers_Mock}}>>
+        var Mock_Server = <<
             port: "7777"
             
         >>
-        var httpMock = <<
+        var Flight_Offers_Mock = <<
             expectedRequest:
               method: POST
               url: /flights/offers
@@ -23,7 +23,7 @@ test-def: Flight search
         >>
     step: When I search for the flight <<{{flightDetails}}>>
         var flightDetails = <<
-            departure: null
+            departure: Amsterdam
             destination: New York
             bookingDate: 2020-10-31T00:00:00.000Z
             context:

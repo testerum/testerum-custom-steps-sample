@@ -22,7 +22,7 @@ public class CompanySteps {
         .registerModule(new JavaTimeModule());;
 
     @When(value = "I create a company <<companyDetails>>",
-        description = "Add the company in the Testerum context:\n"
+          description = "Add the company in the Testerum context:\n"
             + " - **COMPANY_OBJECT** variable contains the company as an object\n"
             + " - **COMPANY_JSON_STRING** variable contains the company as an serialized JSON String")
     public void searchAndSelectTheBestFlightOffer(

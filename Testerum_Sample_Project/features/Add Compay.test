@@ -18,10 +18,10 @@ test-def: Add Compay
               birthDate: 1981-09-25T00:00:00.000Z
              -
               name: Marius Gradinaru
-              age: "27"
+              age: "25"
               sex: MAN
               isRightHanded: true
-              birthDate: 1994-08-11T00:00:00.000Z
+              birthDate: 1995-09-12T00:00:00.000Z
             
         >>
     step: Then the variable <<COMPANY_JSON_STRING>> is equals to JSON <<{{expectedCompanyJson}}>>
@@ -45,10 +45,10 @@ test-def: Add Compay
                 },
                 {
                   "name": "Marius Gradinaru",
-                  "age": 27,
+                  "age": 25,
                   "sex": "MAN",
                   "isRightHanded": true,
-                  "birthDate": [1994, 8, 11]
+                  "birthDate": [1995, 9, 12]
                 }
               ]
             }
