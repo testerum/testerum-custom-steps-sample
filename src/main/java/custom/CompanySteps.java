@@ -34,5 +34,7 @@ public class CompanySteps {
         logger.info(companyJson);
         testVariables.set("COMPANY_OBJECT", company);
         testVariables.set("COMPANY_JSON_STRING", companyJson);
+
+        new Settings().logMySetting();
     }
 }
