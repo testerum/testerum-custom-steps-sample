@@ -10,7 +10,7 @@ public class JunitTesterumTests {
     @TestFactory
     public List<DynamicNode> testerumTestsFactory() {
 
-        return new TesterumJunitTestFactory("Testerum_Sample_Project")
+        return new TesterumJunitTestFactory("tests")
                 .getTests();
     }
 }
