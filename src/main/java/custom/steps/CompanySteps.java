@@ -1,6 +1,4 @@
-package custom;
-
-import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
+package custom.steps;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,6 +9,8 @@ import com.testerum_api.testerum_steps_api.services.TesterumServiceLocator;
 import com.testerum_api.testerum_steps_api.test_context.logger.TesterumLogger;
 import com.testerum_api.testerum_steps_api.test_context.test_vars.TestVariables;
 import custom.company_model.Company;
+
+import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
 public class CompanySteps {
 

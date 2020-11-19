@@ -1,4 +1,4 @@
-package custom;
+package custom.steps;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,10 +7,10 @@ import com.testerum_api.testerum_steps_api.annotations.steps.When;
 import com.testerum_api.testerum_steps_api.services.TesterumServiceLocator;
 import com.testerum_api.testerum_steps_api.test_context.logger.TesterumLogger;
 import com.testerum_api.testerum_steps_api.test_context.test_vars.TestVariables;
-import java.util.List;
-import custom.flight_model.FlightSearchRequest;
-import custom.flight_model.FlightOfferResponse;
 import custom.flight_model.FlightDetails;
+import custom.flight_model.FlightOfferResponse;
+import custom.flight_model.FlightSearchRequest;
+import java.util.List;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

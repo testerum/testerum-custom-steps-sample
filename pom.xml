@@ -24,14 +24,28 @@
     <dependency>
       <groupId>com.testerum</groupId>
       <artifactId>testerum-steps-api</artifactId>
-      <version>3.5.7</version>
+      <version>develop-SNAPSHOT</version>
     </dependency>
 
     <!-- testerum-junit -->
     <dependency>
       <groupId>com.testerum</groupId>
       <artifactId>testerum-junit</artifactId>
-      <version>3.5.7</version>
+      <version>develop-SNAPSHOT</version>
+    </dependency>
+
+    <!-- json-steps -->
+    <dependency>
+      <groupId>com.testerum</groupId>
+      <artifactId>json-steps</artifactId>
+      <version>develop-SNAPSHOT</version>
+    </dependency>
+
+    <!-- http-steps -->
+    <dependency>
+      <groupId>com.testerum</groupId>
+      <artifactId>http-steps</artifactId>
+      <version>develop-SNAPSHOT</version>
     </dependency>
 
     <!--==================== External Dependencies ====================-->
