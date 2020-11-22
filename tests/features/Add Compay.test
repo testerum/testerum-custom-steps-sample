@@ -7,19 +7,19 @@ test-def: Add Compay
              -
               name: Ionut Pruteanu
               age: "39"
-              sex: MAN
+              gender: MAN
               isRightHanded: true
               birthDate: 1981-10-31T00:00:00.000Z
              -
               name: Cristian Mocanu
               age: "37"
-              sex: MAN
+              gender: MAN
               isRightHanded: true
               birthDate: 1981-09-25T00:00:00.000Z
              -
               name: Marius Gradinaru
               age: "25"
-              sex: MAN
+              gender: MAN
               isRightHanded: true
               birthDate: 1995-09-12T00:00:00.000Z
             
@@ -32,21 +32,21 @@ test-def: Add Compay
                 {
                   "name": "Ionut Pruteanu",
                   "age": 39,
-                  "sex": "MAN",
+                  "gender": "MAN",
                   "isRightHanded": true,
                   "birthDate": [1981, 10, 31]
                 },
                 {
                   "name": "Cristian Mocanu",
                   "age": 37,
-                  "sex": "MAN",
+                  "gender": "MAN",
                   "isRightHanded": true,
                   "birthDate": [1981, 9, 25 ]
                 },
                 {
                   "name": "Marius Gradinaru",
                   "age": 25,
-                  "sex": "MAN",
+                  "gender": "MAN",
                   "isRightHanded": true,
                   "birthDate": [1995, 9, 12]
                 }

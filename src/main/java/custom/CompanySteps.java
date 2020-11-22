@@ -1,4 +1,4 @@
-package custom.steps;
+package custom;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,6 +9,7 @@ import com.testerum_api.testerum_steps_api.services.TesterumServiceLocator;
 import com.testerum_api.testerum_steps_api.test_context.logger.TesterumLogger;
 import com.testerum_api.testerum_steps_api.test_context.test_vars.TestVariables;
 import custom.company_model.Company;
+import custom.company_model.Person;
 
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
@@ -25,7 +26,7 @@ public class CompanySteps {
           description = "Add the company in the Testerum context:\n"
             + " - **COMPANY_OBJECT** variable contains the company as an object\n"
             + " - **COMPANY_JSON_STRING** variable contains the company as an serialized JSON String")
-    public void searchAndSelectTheBestFlightOffer(
+    public Person searchAndSelectTheBestFlightOffer(
         @Param(description = "The Company to be added in the context") Company company
     ) throws JsonProcessingException {
 
@@ -36,5 +37,7 @@ public class CompanySteps {
         testVariables.set("COMPANY_JSON_STRING", companyJson);
 
         new Settings().logMySetting();
+
+        return null;
     }
 }

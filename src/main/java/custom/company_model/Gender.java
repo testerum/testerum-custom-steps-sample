@@ -1,6 +1,6 @@
 package custom.company_model;
 
-public enum Sex {
+public enum Gender {
     MAN,
     WOMAN
 }

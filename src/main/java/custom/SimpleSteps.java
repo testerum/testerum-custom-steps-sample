@@ -1,4 +1,4 @@
-package custom.steps;
+package custom;
 
 import com.testerum_api.testerum_steps_api.annotations.steps.Given;
 import com.testerum_api.testerum_steps_api.annotations.steps.Param;

@@ -12,7 +12,7 @@ public class JunitTesterumTests {
     public List<DynamicNode> testerumTestsFactory() {
         return new TesterumJunitTestFactory("tests")
                 .packagesToScan(Arrays.asList(
-                        "custom.steps"
+                        "custom"
                 ))
                 .getTests();
     }

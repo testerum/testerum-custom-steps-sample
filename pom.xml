@@ -15,7 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-
+        <testerum.version>develop-SNAPSHOT</testerum.version>
     </properties>
 
     <dependencies>
@@ -25,36 +25,16 @@
         <dependency>
             <groupId>com.testerum</groupId>
             <artifactId>testerum-steps-api</artifactId>
-            <version>develop-SNAPSHOT</version>
+            <version>${testerum.version}</version>
         </dependency>
 
-        <!-- testerum-junit -->
+        <!-- testerum-junit-all -->
         <dependency>
             <groupId>com.testerum</groupId>
-            <artifactId>testerum-junit</artifactId>
-            <version>develop-SNAPSHOT</version>
+            <artifactId>testerum-junit-all</artifactId>
+            <version>${testerum.version}</version>
         </dependency>
 
-        <!-- assertion-steps -->
-        <dependency>
-            <groupId>com.testerum</groupId>
-            <artifactId>assertion-steps</artifactId>
-            <version>develop-SNAPSHOT</version>
-        </dependency>
-
-        <!-- json-steps -->
-        <dependency>
-            <groupId>com.testerum</groupId>
-            <artifactId>json-steps</artifactId>
-            <version>develop-SNAPSHOT</version>
-        </dependency>
-
-        <!-- http-steps -->
-        <dependency>
-            <groupId>com.testerum</groupId>
-            <artifactId>http-steps</artifactId>
-            <version>develop-SNAPSHOT</version>
-        </dependency>
 
         <!--==================== External Dependencies ====================-->
 
@@ -95,7 +75,7 @@
             <plugin>
                 <groupId>com.testerum</groupId>
                 <artifactId>testerum-extensions-maven-plugin</artifactId>
-                <version>develop-SNAPSHOT</version>
+                <version>${testerum.version}</version>
                 <executions>
                     <execution>
                         <id>assemble-testerum-step-lib</id>

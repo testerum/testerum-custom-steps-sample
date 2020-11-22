@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Person {
     public String name;
     public Integer age;
-    public Sex sex;
+    public Gender gender;
     public Boolean isRightHanded;
     public LocalDate birthDate;
 }
