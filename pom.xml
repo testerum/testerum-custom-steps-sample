@@ -35,6 +35,13 @@
             <version>develop-SNAPSHOT</version>
         </dependency>
 
+        <!-- assertion-steps -->
+        <dependency>
+            <groupId>com.testerum</groupId>
+            <artifactId>assertion-steps</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+
         <!-- json-steps -->
         <dependency>
             <groupId>com.testerum</groupId>
