@@ -17,7 +17,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class FlightSteps {
+public class HttpRequestSteps {
     public static final MediaType APPLICATION_JSON = MediaType.parse("application/json; charset=utf-8");
 
     private final TesterumLogger logger = TesterumServiceLocator.getTesterumLogger();

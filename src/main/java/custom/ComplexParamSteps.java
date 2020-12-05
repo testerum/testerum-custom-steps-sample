@@ -13,7 +13,7 @@ import custom.company_model.Person;
 
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
-public class CompanySteps {
+public class ComplexParamSteps {
 
     private final TesterumLogger logger = TesterumServiceLocator.getTesterumLogger();
     private final TestVariables testVariables = TesterumServiceLocator.getTestVariables();
