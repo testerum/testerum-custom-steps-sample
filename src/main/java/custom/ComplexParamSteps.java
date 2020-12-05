@@ -12,7 +12,7 @@ import com.testerum_api.testerum_steps_api.test_context.logger.TesterumLogger;
 import com.testerum_api.testerum_steps_api.test_context.test_vars.TestVariables;
 import custom.company_model.Company;
 
-public class CompanySteps {
+public class ComplexParamSteps {
 
     private final TesterumLogger logger = TesterumServiceLocator.getTesterumLogger();
     private final TestVariables testVariables = TesterumServiceLocator.getTestVariables();
