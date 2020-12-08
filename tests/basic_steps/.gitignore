@@ -1,0 +1,2 @@
+# to get the custom steps in this directory, execute "mvn package"
+*.jar
