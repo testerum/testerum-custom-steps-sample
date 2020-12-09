@@ -16,5 +16,4 @@ public class JunitTesterumTests {
                 ))
                 .getTests();
     }
-
 }

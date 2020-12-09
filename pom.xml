@@ -15,7 +15,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-        <testerum.version>4.0.1</testerum.version>
+
+        <testerum.version>4.0.2</testerum.version>
     </properties>
 
     <dependencies>
